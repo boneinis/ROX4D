@@ -394,12 +394,12 @@ export default function AlphaModelPage() {
                   <div className={`pt-4 border-t ${theme === 'dark' ? 'border-gray-700' : 'border-gray-300'}`}>
                     <div className="space-y-2">
                       <div className="flex justify-between items-center">
-                        <span className={`text-xs font-semibold uppercase ${theme === 'dark' ? 'text-gray-500' : 'text-gray-500'}`}>Sides</span>
-                        <span className={`text-sm font-bold ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>{gradeSpecs.haul.sides}</span>
-                      </div>
-                      <div className="flex justify-between items-center">
                         <span className={`text-xs font-semibold uppercase ${theme === 'dark' ? 'text-gray-500' : 'text-gray-500'}`}>Floor</span>
                         <span className={`text-sm font-bold ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>{gradeSpecs.haul.floor}</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className={`text-xs font-semibold uppercase ${theme === 'dark' ? 'text-gray-500' : 'text-gray-500'}`}>Sides</span>
+                        <span className={`text-sm font-bold ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>{gradeSpecs.haul.sides}</span>
                       </div>
                     </div>
                   </div>
@@ -436,12 +436,12 @@ export default function AlphaModelPage() {
                   <div className={`pt-4 border-t ${theme === 'dark' ? 'border-gray-700' : 'border-gray-300'}`}>
                     <div className="space-y-2">
                       <div className="flex justify-between items-center">
-                        <span className={`text-xs font-semibold uppercase ${theme === 'dark' ? 'text-gray-500' : 'text-gray-500'}`}>Sides</span>
-                        <span className={`text-sm font-bold ${theme === 'dark' ? 'text-blue-400' : 'text-blue-600'}`}>{gradeSpecs.edge.sides}</span>
-                      </div>
-                      <div className="flex justify-between items-center">
                         <span className={`text-xs font-semibold uppercase ${theme === 'dark' ? 'text-gray-500' : 'text-gray-500'}`}>Floor</span>
                         <span className={`text-sm font-bold ${theme === 'dark' ? 'text-blue-400' : 'text-blue-600'}`}>{gradeSpecs.edge.floor}</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className={`text-xs font-semibold uppercase ${theme === 'dark' ? 'text-gray-500' : 'text-gray-500'}`}>Sides</span>
+                        <span className={`text-sm font-bold ${theme === 'dark' ? 'text-blue-400' : 'text-blue-600'}`}>{gradeSpecs.edge.sides}</span>
                       </div>
                     </div>
                   </div>
@@ -478,12 +478,12 @@ export default function AlphaModelPage() {
                   <div className={`pt-4 border-t ${theme === 'dark' ? 'border-gray-700' : 'border-gray-300'}`}>
                     <div className="space-y-2">
                       <div className="flex justify-between items-center">
-                        <span className={`text-xs font-semibold uppercase ${theme === 'dark' ? 'text-gray-500' : 'text-gray-500'}`}>Sides</span>
-                        <span className={`text-sm font-bold ${theme === 'dark' ? 'text-orange-400' : 'text-orange-600'}`}>{gradeSpecs.beast.sides}</span>
-                      </div>
-                      <div className="flex justify-between items-center">
                         <span className={`text-xs font-semibold uppercase ${theme === 'dark' ? 'text-gray-500' : 'text-gray-500'}`}>Floor</span>
                         <span className={`text-sm font-bold ${theme === 'dark' ? 'text-orange-400' : 'text-orange-600'}`}>{gradeSpecs.beast.floor}</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className={`text-xs font-semibold uppercase ${theme === 'dark' ? 'text-gray-500' : 'text-gray-500'}`}>Sides</span>
+                        <span className={`text-sm font-bold ${theme === 'dark' ? 'text-orange-400' : 'text-orange-600'}`}>{gradeSpecs.beast.sides}</span>
                       </div>
                     </div>
                   </div>

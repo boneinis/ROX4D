@@ -467,10 +467,10 @@ export default function ApexModelPage() {
                       <span className="font-semibold">Longsills:</span> Strenx 110XF
                     </p>
                     <p className={`text-sm ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                      <span className="font-semibold">Sides:</span> {gradeSpecs[selectedGrade].sides}
+                      <span className="font-semibold">Floor:</span> {gradeSpecs[selectedGrade].floor}
                     </p>
                     <p className={`text-sm ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                      <span className="font-semibold">Floor:</span> {gradeSpecs[selectedGrade].floor}
+                      <span className="font-semibold">Sides:</span> {gradeSpecs[selectedGrade].sides}
                     </p>
                   </div>
                 </div>
