@@ -14,7 +14,7 @@ export function Footer() {
       theme === 'dark' ? 'bg-black/80 border-gray-800' : 'bg-white/80 border-gray-200'
     } border-t backdrop-blur-md`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="space-y-4">
             <img
@@ -83,6 +83,41 @@ export function Footer() {
                   }`}
                 >
                   Elliptical <span className="text-xs text-orange-500">(Coming Soon)</span>
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Resources */}
+          <div>
+            <h3 className={`text-sm font-semibold mb-4 ${
+              theme === 'dark' ? 'text-white' : 'text-gray-900'
+            }`}>
+              Resources
+            </h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/resources/steel-selection-guide"
+                  className={`text-sm ${transitionClass} ${
+                    theme === 'dark'
+                      ? 'text-gray-400 hover:text-white'
+                      : 'text-gray-600 hover:text-gray-900'
+                  }`}
+                >
+                  Steel Selection Guide
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/resources/steel-guide"
+                  className={`text-sm ${transitionClass} ${
+                    theme === 'dark'
+                      ? 'text-gray-400 hover:text-white'
+                      : 'text-gray-600 hover:text-gray-900'
+                  }`}
+                >
+                  Hardox Comparison Chart
                 </Link>
               </li>
             </ul>
