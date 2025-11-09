@@ -871,52 +871,6 @@ export default function SteelSelectionGuidePage() {
                   </ul>
                 </div>
               </div>
-
-              {/* Strenx 700 */}
-              <div className={`rounded-xl p-6 ${
-                theme === 'dark' ? 'bg-white/5 border-2 border-gray-700' : 'bg-white border-2 border-gray-200'
-              }`}>
-                <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
-                      Strenx 700
-                    </h3>
-                    <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>SSAB</div>
-                  </div>
-                  <div className={`px-3 py-1 rounded-full text-sm font-bold ${
-                    theme === 'dark' ? 'bg-gray-600 text-gray-300' : 'bg-gray-200 text-gray-700'
-                  }`}>4/5</div>
-                </div>
-                <div className={`space-y-2 text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                  <div><strong>Hardness:</strong> ≥700 MPa yield</div>
-                  <div><strong>Impact Test:</strong> Min 27J @ -40°C</div>
-                  <div><strong>Cold Weather:</strong> Excellent</div>
-                  <div><strong>Service Life:</strong> Structural steel</div>
-                </div>
-                <div className={`text-sm mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                  <strong>Dump Truck Uses:</strong>
-                  <ul className="list-disc ml-5 mt-1">
-                    <li>Body frames</li>
-                    <li>Chassis reinforcement</li>
-                    <li>Weight-critical structures</li>
-                  </ul>
-                </div>
-                <div className={`text-sm mb-2 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
-                  <strong>Pros:</strong>
-                  <ul className="list-disc ml-5 mt-1">
-                    <li>High strength-to-weight</li>
-                    <li>Excellent toughness</li>
-                    <li>Weight savings</li>
-                  </ul>
-                </div>
-                <div className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'}`}>
-                  <strong>Cons:</strong>
-                  <ul className="list-disc ml-5 mt-1">
-                    <li>Not wear resistant</li>
-                    <li>Structural use only</li>
-                  </ul>
-                </div>
-              </div>
             </div>
 
             <div className={`mt-6 p-4 rounded-lg text-xs ${
