@@ -100,11 +100,11 @@ export default function SteelGuidePage() {
                 </div>
                 <div>
                   <span className={`font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Yield Strength:</span>
-                  <span className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>1100-1300 MPa (typical)</span>
+                  <span className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>1200 MPa min</span>
                 </div>
                 <div>
                   <span className={`font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Impact Energy:</span>
-                  <span className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>50 J at -40°C (typical)</span>
+                  <span className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>27 J at -20°C</span>
                 </div>
               </div>
             </div>
@@ -130,7 +130,7 @@ export default function SteelGuidePage() {
                 </div>
                 <div>
                   <span className={`font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Yield Strength:</span>
-                  <span className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>1250-1400 MPa (typical)</span>
+                  <span className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>1300 MPa min</span>
                 </div>
                 <div>
                   <span className={`font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Impact Energy:</span>
