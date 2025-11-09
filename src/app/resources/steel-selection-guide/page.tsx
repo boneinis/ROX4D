@@ -872,14 +872,14 @@ export default function SteelSelectionGuidePage() {
                 </div>
               </div>
 
-              {/* Domex 700 */}
+              {/* Strenx 700 */}
               <div className={`rounded-xl p-6 ${
                 theme === 'dark' ? 'bg-white/5 border-2 border-gray-700' : 'bg-white border-2 border-gray-200'
               }`}>
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
-                      Domex 700
+                      Strenx 700
                     </h3>
                     <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>SSAB</div>
                   </div>
