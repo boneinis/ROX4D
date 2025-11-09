@@ -83,208 +83,152 @@ export default function SteelGuidePage() {
               ? 'bg-white/5 border-2 border-gray-700'
               : 'bg-white/80 border-2 border-gray-200'
           }`}>
-            <h2 className={`text-2xl font-bold mb-6 ${
+            <h2 className={`text-2xl md:text-3xl font-bold mb-2 text-center ${
               theme === 'dark' ? 'text-white' : 'text-gray-900'
             }`}>
-              Hardox 450 vs Hardox 500 Tuf Comparison
+              Hardox Steel Thickness Comparison Chart
             </h2>
+            <p className={`text-center mb-8 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
+              Comparing Hardox 450 vs 500 Tuf performance across different applications
+            </p>
 
-            {/* Specifications Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              {/* Hardox 450 */}
-              <div className={`rounded-xl p-6 ${
-                theme === 'dark' ? 'bg-blue-500/10 border-2 border-blue-500/30' : 'bg-blue-50 border-2 border-blue-200'
-              }`}>
-                <h3 className={`text-xl font-bold mb-4 ${theme === 'dark' ? 'text-blue-400' : 'text-blue-600'}`}>
-                  Hardox 450 (Standard)
-                </h3>
-                <div className="space-y-3">
-                  <div>
-                    <p className={`text-sm font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Hardness</p>
-                    <p className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>425-475 HBW</p>
-                  </div>
-                  <div>
-                    <p className={`text-sm font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Yield Strength</p>
-                    <p className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>1100-1300 MPa</p>
-                  </div>
-                  <div>
-                    <p className={`text-sm font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Impact Energy</p>
-                    <p className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>50 J at -40°C</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Hardox 500 Tuf */}
-              <div className={`rounded-xl p-6 ${
-                theme === 'dark' ? 'bg-green-500/10 border-2 border-green-500/30' : 'bg-green-50 border-2 border-green-200'
-              }`}>
-                <h3 className={`text-xl font-bold mb-4 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
-                  Hardox 500 Tuf (Lightweight)
-                </h3>
-                <div className="space-y-3">
-                  <div>
-                    <p className={`text-sm font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Hardness</p>
-                    <p className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>475-505 HBW</p>
-                  </div>
-                  <div>
-                    <p className={`text-sm font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Yield Strength</p>
-                    <p className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>1250-1400 MPa</p>
-                  </div>
-                  <div>
-                    <p className={`text-sm font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Impact Energy</p>
-                    <p className={`text-lg font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>45 J at -40°C</p>
-                  </div>
-                </div>
-                <div className={`mt-4 pt-4 border-t ${theme === 'dark' ? 'border-green-500/30' : 'border-green-300'}`}>
-                  <p className={`text-sm font-bold ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
-                    18-23% Weight Reduction
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Application Recommendations Table */}
+            {/* Application Comparison Table */}
             <div className="overflow-x-auto">
-              <h3 className={`text-xl font-bold mb-4 ${
-                theme === 'dark' ? 'text-white' : 'text-gray-900'
-              }`}>
-                Application Recommendations
-              </h3>
-              <table className="w-full">
+              <table className="w-full border-collapse">
                 <thead>
                   <tr className={`${
                     theme === 'dark' ? 'bg-gray-800 border-gray-700' : 'bg-gray-100 border-gray-300'
                   } border-b-2`}>
-                    <th className={`text-left p-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Material Type</th>
-                    <th className={`text-center p-4 ${theme === 'dark' ? 'text-blue-400' : 'text-blue-600'}`}>Hardox 450</th>
-                    <th className={`text-center p-4 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>Hardox 500 Tuf</th>
+                    <th className={`text-left p-4 font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Application</th>
+                    <th className={`text-left p-4 font-bold ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>Hardox 450<br /><span className="text-sm font-normal">Standard Option</span></th>
+                    <th className={`text-left p-4 font-bold ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>Hardox 500 Tuf<br /><span className="text-sm font-normal">Lightweight Option</span></th>
+                    <th className={`text-left p-4 font-bold ${theme === 'dark' ? 'text-blue-400' : 'text-blue-600'}`}>Performance Comparison<br /><span className="text-sm font-normal">500 Tuf vs Thicker 450</span></th>
                   </tr>
                 </thead>
                 <tbody className={`${theme === 'dark' ? 'divide-gray-700' : 'divide-gray-200'} divide-y`}>
                   <tr>
                     <td className={`p-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                      <span className="font-semibold">Aggregate Materials</span>
-                      <br />
-                      <span className="text-sm">Sand, dirt, crushed stone</span>
+                      <div className="font-bold mb-1">Aggregate Materials</div>
+                      <div className="text-sm">Sand, Dirt, #1 & Smaller Crushed Stone/Gravel</div>
                     </td>
-                    <td className="p-4 text-center">
-                      <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${
-                        theme === 'dark' ? 'bg-blue-500/20 text-blue-400' : 'bg-blue-100 text-blue-700'
-                      }`}>
-                        Recommended
-                      </span>
+                    <td className={`p-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                      <div className="text-sm">3/16&quot; Floor + 5/32&quot; Walls</div>
+                      <div className="text-xs text-gray-500 mt-1">Improved dent resistance</div>
                     </td>
-                    <td className="p-4 text-center">
-                      <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${
+                    <td className={`p-4 ${theme === 'dark' ? 'text-green-300' : 'text-green-700'}`}>
+                      <div className="text-sm font-semibold">5/32&quot; Floor + 1/8&quot; Walls</div>
+                      <div className="text-xs mt-1">~18% lighter</div>
+                    </td>
+                    <td className={`p-4 ${theme === 'dark' ? 'text-blue-300' : 'text-blue-700'}`}>
+                      <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-2 ${
                         theme === 'dark' ? 'bg-green-500/20 text-green-400' : 'bg-green-100 text-green-700'
-                      }`}>
-                        Best Choice
-                      </span>
+                      }`}>500 Tuf Better</div>
+                      <div className="text-sm">500 Tuf provides ~7% better dent resistance plus 18% weight savings for increased payload</div>
                     </td>
                   </tr>
+
                   <tr className={theme === 'dark' ? 'bg-white/5' : 'bg-gray-50'}>
                     <td className={`p-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                      <span className="font-semibold">Hot Asphalt</span>
-                      <br />
-                      <span className="text-sm">Paving materials</span>
+                      <div className="font-bold mb-1">Hot Asphalt</div>
+                      <div className="text-sm">Hot Mix, Paving Materials</div>
                     </td>
-                    <td className="p-4 text-center">
-                      <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${
-                        theme === 'dark' ? 'bg-blue-500/20 text-blue-400' : 'bg-blue-100 text-blue-700'
-                      }`}>
-                        Recommended
-                      </span>
+                    <td className={`p-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                      <div className="text-sm">3/16&quot; Floor + 5/32&quot; Walls</div>
+                      <div className="text-xs text-gray-500 mt-1">Field proven standard</div>
                     </td>
-                    <td className="p-4 text-center">
-                      <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${
+                    <td className={`p-4 ${theme === 'dark' ? 'text-green-300' : 'text-green-700'}`}>
+                      <div className="text-sm font-semibold">5/32&quot; Floor + 1/8&quot; Walls</div>
+                      <div className="text-xs mt-1">~18% lighter</div>
+                    </td>
+                    <td className={`p-4 ${theme === 'dark' ? 'text-blue-300' : 'text-blue-700'}`}>
+                      <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-2 ${
                         theme === 'dark' ? 'bg-green-500/20 text-green-400' : 'bg-green-100 text-green-700'
-                      }`}>
-                        Best Choice
-                      </span>
+                      }`}>500 Tuf Better</div>
+                      <div className="text-sm">500 Tuf offers superior hardness and impact resistance while being 18% lighter</div>
                     </td>
                   </tr>
+
                   <tr>
                     <td className={`p-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                      <span className="font-semibold">Class I Rip Rap</span>
-                      <br />
-                      <span className="text-sm">6-12&quot; angular rock (~125 lbs)</span>
+                      <div className="font-bold mb-1">Class I Rip Rap</div>
+                      <div className="text-sm">6-12&quot; Angular Rock (~125 lbs typical)</div>
                     </td>
-                    <td className="p-4 text-center">
-                      <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${
-                        theme === 'dark' ? 'bg-blue-500/20 text-blue-400' : 'bg-blue-100 text-blue-700'
-                      }`}>
-                        Recommended
-                      </span>
+                    <td className={`p-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                      <div className="text-sm">3/16&quot; Floor + 5/32&quot; Walls</div>
+                      <div className="text-xs text-gray-500 mt-1">Adequate for Class I</div>
                     </td>
-                    <td className="p-4 text-center">
-                      <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${
+                    <td className={`p-4 ${theme === 'dark' ? 'text-green-300' : 'text-green-700'}`}>
+                      <div className="text-sm font-semibold">5/32&quot; Floor + 1/8&quot; Walls</div>
+                      <div className="text-xs mt-1">~18% lighter</div>
+                    </td>
+                    <td className={`p-4 ${theme === 'dark' ? 'text-blue-300' : 'text-blue-700'}`}>
+                      <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-2 ${
                         theme === 'dark' ? 'bg-green-500/20 text-green-400' : 'bg-green-100 text-green-700'
-                      }`}>
-                        Best Choice
-                      </span>
+                      }`}>500 Tuf Better</div>
+                      <div className="text-sm">500 Tuf&apos;s superior hardness fully compensates for thinner material, providing equal durability at 18% less weight</div>
                     </td>
                   </tr>
+
                   <tr className={theme === 'dark' ? 'bg-white/5' : 'bg-gray-50'}>
                     <td className={`p-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                      <span className="font-semibold">Class II Rip Rap</span>
-                      <br />
-                      <span className="text-sm">12-18&quot; angular rock (~350 lbs)</span>
+                      <div className="font-bold mb-1">Class II Rip Rap</div>
+                      <div className="text-sm">12-18&quot; Angular Rock (~350 lbs typical)</div>
                     </td>
-                    <td className="p-4 text-center">
-                      <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${
+                    <td className={`p-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                      <div className="text-sm">1/4&quot; Floor + 3/16&quot; Walls</div>
+                      <div className="text-xs text-gray-500 mt-1">For heavy impact resistance</div>
+                    </td>
+                    <td className={`p-4 ${theme === 'dark' ? 'text-green-300' : 'text-green-700'}`}>
+                      <div className="text-sm font-semibold">3/16&quot; Floor + 5/32&quot; Walls</div>
+                      <div className="text-xs mt-1">~20% lighter (~750lbs extra payload)</div>
+                    </td>
+                    <td className={`p-4 ${theme === 'dark' ? 'text-blue-300' : 'text-blue-700'}`}>
+                      <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-2 ${
                         theme === 'dark' ? 'bg-blue-500/20 text-blue-400' : 'bg-blue-100 text-blue-700'
-                      }`}>
-                        Recommended
-                      </span>
-                    </td>
-                    <td className="p-4 text-center">
-                      <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${
-                        theme === 'dark' ? 'bg-yellow-500/20 text-yellow-400' : 'bg-yellow-100 text-yellow-700'
-                      }`}>
-                        Acceptable
-                      </span>
+                      }`}>Similar Performance</div>
+                      <div className="text-sm">500 Tuf matches 450&apos;s durability with 20% weight reduction - higher hardness offsets thinner walls</div>
                     </td>
                   </tr>
+
                   <tr>
                     <td className={`p-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                      <span className="font-semibold">Class III Rip Rap</span>
-                      <br />
-                      <span className="text-sm">18-24&quot;+ angular rock (~750 lbs)</span>
+                      <div className="font-bold mb-1">Class III Rip Rap</div>
+                      <div className="text-sm">18-24&quot;+ Angular Rock (~750 lbs typical)</div>
                     </td>
-                    <td className="p-4 text-center">
-                      <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${
+                    <td className={`p-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                      <div className="text-sm">5/16&quot; Floor + 1/4&quot; Walls</div>
+                      <div className="text-xs text-gray-500 mt-1">Heavy-duty specification</div>
+                    </td>
+                    <td className={`p-4 ${theme === 'dark' ? 'text-green-300' : 'text-green-700'}`}>
+                      <div className="text-sm font-semibold">1/4&quot; Floor + 3/16&quot; Walls</div>
+                      <div className="text-xs mt-1">~23% lighter (~1150lbs extra payload)</div>
+                    </td>
+                    <td className={`p-4 ${theme === 'dark' ? 'text-blue-300' : 'text-blue-700'}`}>
+                      <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-2 ${
                         theme === 'dark' ? 'bg-blue-500/20 text-blue-400' : 'bg-blue-100 text-blue-700'
-                      }`}>
-                        Recommended
-                      </span>
-                    </td>
-                    <td className="p-4 text-center">
-                      <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${
-                        theme === 'dark' ? 'bg-red-500/20 text-red-400' : 'bg-red-100 text-red-700'
-                      }`}>
-                        Not Recommended
-                      </span>
+                      }`}>Similar Performance</div>
+                      <div className="text-sm">500 Tuf delivers equal protection with 23% weight savings - ideal for extreme impact while maximizing payload</div>
                     </td>
                   </tr>
+
                   <tr className={theme === 'dark' ? 'bg-white/5' : 'bg-gray-50'}>
                     <td className={`p-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                      <span className="font-semibold">Construction Debris</span>
-                      <br />
-                      <span className="text-sm">Demo material, broken concrete</span>
+                      <div className="font-bold mb-1">Construction Debris</div>
+                      <div className="text-sm">Demo Material, Broken Concrete, Mixed</div>
                     </td>
-                    <td className="p-4 text-center">
-                      <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${
-                        theme === 'dark' ? 'bg-blue-500/20 text-blue-400' : 'bg-blue-100 text-blue-700'
-                      }`}>
-                        Recommended
-                      </span>
+                    <td className={`p-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                      <div className="text-sm">1/4&quot; Floor + 3/16&quot; Walls</div>
+                      <div className="text-xs text-gray-500 mt-1">Some denting at 3/16&quot; 1/4&quot; for heavy use</div>
                     </td>
-                    <td className="p-4 text-center">
-                      <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${
+                    <td className={`p-4 ${theme === 'dark' ? 'text-green-300' : 'text-green-700'}`}>
+                      <div className="text-sm font-semibold">3/16&quot; Floor + 5/32&quot; Walls</div>
+                      <div className="text-xs mt-1">~20% lighter (~750lbs extra payload)</div>
+                    </td>
+                    <td className={`p-4 ${theme === 'dark' ? 'text-blue-300' : 'text-blue-700'}`}>
+                      <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-2 ${
                         theme === 'dark' ? 'bg-green-500/20 text-green-400' : 'bg-green-100 text-green-700'
-                      }`}>
-                        Best Choice
-                      </span>
+                      }`}>500 Tuf Better</div>
+                      <div className="text-sm">500 Tuf&apos;s superior toughness handles sharp impacts better than 450, plus delivers 20% weight savings</div>
                     </td>
                   </tr>
                 </tbody>
