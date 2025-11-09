@@ -77,6 +77,109 @@ export default function SteelGuidePage() {
             </p>
           </div>
 
+          {/* Chart Legend & Specifications */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Hardox 450 Standard */}
+            <div className={`backdrop-blur-sm rounded-xl p-6 ${transitionClass} ${
+              theme === 'dark'
+                ? 'bg-white/5 border-2 border-gray-700'
+                : 'bg-white/80 border-2 border-gray-200'
+            }`}>
+              <h3 className={`text-lg font-bold mb-3 ${
+                theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
+              }`}>
+                Hardox 450 Standard
+              </h3>
+              <p className={`text-sm mb-4 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
+                Proven field performance with established thickness standards. Lower material cost per pound.
+              </p>
+              <div className="space-y-2 text-sm">
+                <div>
+                  <span className={`font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Hardness:</span>
+                  <span className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>425-475 HBW</span>
+                </div>
+                <div>
+                  <span className={`font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Yield Strength:</span>
+                  <span className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>1100-1300 MPa (typical)</span>
+                </div>
+                <div>
+                  <span className={`font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Impact Energy:</span>
+                  <span className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>50 J at -40°C (typical)</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Hardox 500 Tuf Lightweight */}
+            <div className={`backdrop-blur-sm rounded-xl p-6 ${transitionClass} ${
+              theme === 'dark'
+                ? 'bg-gradient-to-br from-green-500/10 to-blue-500/10 border-2 border-green-500/30'
+                : 'bg-gradient-to-br from-green-50 to-blue-50 border-2 border-green-200'
+            }`}>
+              <h3 className={`text-lg font-bold mb-3 ${
+                theme === 'dark' ? 'text-green-400' : 'text-green-600'
+              }`}>
+                Hardox 500 Tuf Lightweight
+              </h3>
+              <p className={`text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                Superior hardness and toughness allows thinner sections. Significant weight savings for more payload.
+              </p>
+              <div className="space-y-2 text-sm">
+                <div>
+                  <span className={`font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Hardness:</span>
+                  <span className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>475-505 HBW</span>
+                </div>
+                <div>
+                  <span className={`font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Yield Strength:</span>
+                  <span className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>1250-1400 MPa (typical)</span>
+                </div>
+                <div>
+                  <span className={`font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Impact Energy:</span>
+                  <div className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                    27 J at -20°C (guaranteed)
+                    <br />
+                    45 J at -40°C (typical)
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Performance Comparison */}
+            <div className={`backdrop-blur-sm rounded-xl p-6 ${transitionClass} ${
+              theme === 'dark'
+                ? 'bg-gradient-to-br from-blue-500/10 to-purple-500/10 border-2 border-blue-500/30'
+                : 'bg-gradient-to-br from-blue-50 to-purple-50 border-2 border-blue-200'
+            }`}>
+              <h3 className={`text-lg font-bold mb-3 ${
+                theme === 'dark' ? 'text-blue-400' : 'text-blue-600'
+              }`}>
+                Performance Comparison
+              </h3>
+              <p className={`text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                Field-tested comparison showing how thinner 500 Tuf performs vs thicker 450 standard.
+              </p>
+              <div className="space-y-3">
+                <div className={`flex items-start gap-2 text-sm ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <svg className={`w-5 h-5 mt-0.5 flex-shrink-0 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span><strong>~18% lighter</strong> body with 500 Tuf</span>
+                </div>
+                <div className={`flex items-start gap-2 text-sm ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <svg className={`w-5 h-5 mt-0.5 flex-shrink-0 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span><strong>50% longer life</strong> vs 450 HBW steel</span>
+                </div>
+                <div className={`flex items-start gap-2 text-sm ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <svg className={`w-5 h-5 mt-0.5 flex-shrink-0 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>500 Tuf <strong>combines best of both grades</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Hardox Comparison Chart */}
           <div className={`backdrop-blur-sm rounded-2xl p-8 ${transitionClass} ${
             theme === 'dark'
@@ -283,6 +386,19 @@ export default function SteelGuidePage() {
                 more payload per trip while maintaining equivalent durability for most applications.
               </p>
             </div>
+          </div>
+
+          {/* Technical Note */}
+          <div className={`backdrop-blur-sm rounded-xl p-6 border ${transitionClass} ${
+            theme === 'dark'
+              ? 'bg-gray-800/50 border-gray-700'
+              : 'bg-gray-100 border-gray-300'
+          }`}>
+            <p className={`text-xs ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
+              <strong>Note:</strong> Technical specifications based on official SSAB data. Hardox® is a registered trademark of SSAB.
+              Performance comparisons based on field testing and SSAB published data. This chart is for reference purposes only -
+              actual performance may vary based on specific usage conditions, material handling practices, and operating environment.
+            </p>
           </div>
 
           {/* Back Links */}
