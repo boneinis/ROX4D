@@ -591,51 +591,6 @@ export default function SteelSelectionGuidePage() {
                 </div>
               </div>
 
-              {/* Hardox 400 */}
-              <div className={`rounded-xl p-6 ${
-                theme === 'dark' ? 'bg-white/5 border-2 border-gray-700' : 'bg-white border-2 border-gray-200'
-              }`}>
-                <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
-                      Hardox 400
-                    </h3>
-                    <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>SSAB</div>
-                  </div>
-                  <div className={`px-3 py-1 rounded-full text-sm font-bold ${
-                    theme === 'dark' ? 'bg-gray-600 text-gray-300' : 'bg-gray-200 text-gray-700'
-                  }`}>4/5</div>
-                </div>
-                <div className={`space-y-2 text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                  <div><strong>Hardness:</strong> 370-430 HBW</div>
-                  <div><strong>Impact Test:</strong> 25J @ -40°C typical</div>
-                  <div><strong>Cold Weather:</strong> Good</div>
-                  <div><strong>Service Life:</strong> 30% longer</div>
-                </div>
-                <div className={`text-sm mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                  <strong>Dump Truck Uses:</strong>
-                  <ul className="list-disc ml-5 mt-1">
-                    <li>Contractor bodies</li>
-                    <li>Landscape trucks</li>
-                    <li>Light materials</li>
-                  </ul>
-                </div>
-                <div className={`text-sm mb-2 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
-                  <strong>Pros:</strong>
-                  <ul className="list-disc ml-5 mt-1">
-                    <li>Good formability</li>
-                    <li>Lower cost than 450</li>
-                    <li>Wide availability</li>
-                  </ul>
-                </div>
-                <div className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'}`}>
-                  <strong>Cons:</strong>
-                  <ul className="list-disc ml-5 mt-1">
-                    <li>Less wear resistance</li>
-                  </ul>
-                </div>
-              </div>
-
               {/* AR400 */}
               <div className={`rounded-xl p-6 ${
                 theme === 'dark' ? 'bg-yellow-500/10 border-2 border-yellow-500/30' : 'bg-yellow-50 border-2 border-yellow-200'
@@ -729,52 +684,6 @@ export default function SteelSelectionGuidePage() {
                 </div>
               </div>
 
-              {/* T-1/A514 */}
-              <div className={`rounded-xl p-6 ${
-                theme === 'dark' ? 'bg-white/5 border-2 border-gray-700' : 'bg-white border-2 border-gray-200'
-              }`}>
-                <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
-                      T-1/A514
-                    </h3>
-                    <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Various</div>
-                  </div>
-                  <div className={`px-3 py-1 rounded-full text-sm font-bold ${
-                    theme === 'dark' ? 'bg-gray-600 text-gray-300' : 'bg-gray-200 text-gray-700'
-                  }`}>4/5</div>
-                </div>
-                <div className={`space-y-2 text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                  <div><strong>Hardness:</strong> 235-290 HBW</div>
-                  <div><strong>Impact Test:</strong> Min 20J @ -50°C</div>
-                  <div><strong>Cold Weather:</strong> Excellent</div>
-                  <div><strong>Service Life:</strong> Structural only</div>
-                </div>
-                <div className={`text-sm mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                  <strong>Dump Truck Uses:</strong>
-                  <ul className="list-disc ml-5 mt-1">
-                    <li>Body framework</li>
-                    <li>Hoist towers</li>
-                    <li>Structural components</li>
-                  </ul>
-                </div>
-                <div className={`text-sm mb-2 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
-                  <strong>Pros:</strong>
-                  <ul className="list-disc ml-5 mt-1">
-                    <li>High strength</li>
-                    <li>Excellent toughness</li>
-                    <li>Weldable</li>
-                  </ul>
-                </div>
-                <div className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'}`}>
-                  <strong>Cons:</strong>
-                  <ul className="list-disc ml-5 mt-1">
-                    <li>Not wear resistant</li>
-                    <li>Not for dump floors</li>
-                  </ul>
-                </div>
-              </div>
-
               {/* AR500 - Warning */}
               <div className={`rounded-xl p-6 ${
                 theme === 'dark' ? 'bg-red-500/10 border-2 border-red-500/30' : 'bg-red-50 border-2 border-red-300'
@@ -821,53 +730,6 @@ export default function SteelSelectionGuidePage() {
                     <li>Catastrophic failure risk</li>
                     <li>Shatters on impact</li>
                     <li>Warranty void risk</li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* Hardox 600 */}
-              <div className={`rounded-xl p-6 ${
-                theme === 'dark' ? 'bg-white/5 border-2 border-gray-700' : 'bg-white border-2 border-gray-200'
-              }`}>
-                <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
-                      Hardox 600
-                    </h3>
-                    <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>SSAB</div>
-                  </div>
-                  <div className={`px-3 py-1 rounded-full text-sm font-bold ${
-                    theme === 'dark' ? 'bg-gray-600 text-gray-300' : 'bg-gray-200 text-gray-700'
-                  }`}>3/5</div>
-                </div>
-                <div className={`space-y-2 text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                  <div><strong>Hardness:</strong> 570-640 HBW</div>
-                  <div><strong>Impact Test:</strong> Limited toughness</div>
-                  <div><strong>Cold Weather:</strong> Fair</div>
-                  <div><strong>Service Life:</strong> 2x for pure wear</div>
-                </div>
-                <div className={`text-sm mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                  <strong>Dump Truck Uses:</strong>
-                  <ul className="list-disc ml-5 mt-1">
-                    <li>Tailgate liners</li>
-                    <li>High-wear zones</li>
-                    <li>Non-impact areas only</li>
-                  </ul>
-                </div>
-                <div className={`text-sm mb-2 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
-                  <strong>Pros:</strong>
-                  <ul className="list-disc ml-5 mt-1">
-                    <li>Extreme hardness</li>
-                    <li>Maximum wear life</li>
-                    <li>SSAB quality</li>
-                  </ul>
-                </div>
-                <div className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'}`}>
-                  <strong>Cons:</strong>
-                  <ul className="list-disc ml-5 mt-1">
-                    <li>Not for structural use</li>
-                    <li>Limited formability</li>
-                    <li>High cost</li>
                   </ul>
                 </div>
               </div>
