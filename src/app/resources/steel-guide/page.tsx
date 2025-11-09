@@ -100,11 +100,11 @@ export default function SteelGuidePage() {
                 </div>
                 <div>
                   <span className={`font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Yield Strength:</span>
-                  <span className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>1200 MPa min</span>
+                  <span className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>1250 MPa (181 ksi)</span>
                 </div>
                 <div>
                   <span className={`font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Impact Energy:</span>
-                  <span className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>27 J at -20°C</span>
+                  <span className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>50 J (37 ft-lb) at -40°C</span>
                 </div>
               </div>
             </div>
@@ -130,14 +130,14 @@ export default function SteelGuidePage() {
                 </div>
                 <div>
                   <span className={`font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Yield Strength:</span>
-                  <span className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>1300 MPa min</span>
+                  <span className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>1370 MPa (199 ksi)</span>
                 </div>
                 <div>
                   <span className={`font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Impact Energy:</span>
                   <div className={`ml-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                    27 J at -20°C (guaranteed)
+                    50 J (37 ft-lb) at -40°C (typical)
                     <br />
-                    45 J at -40°C (typical)
+                    27 J (20 ft-lb) at -20°C (guaranteed)
                   </div>
                 </div>
               </div>
@@ -168,7 +168,7 @@ export default function SteelGuidePage() {
                   <svg className={`w-5 h-5 mt-0.5 flex-shrink-0 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span><strong>50% longer life</strong> vs 450 HBW steel</span>
+                  <span><strong>Up to 40% longer wear life</strong> vs Hardox 450</span>
                 </div>
                 <div className={`flex items-start gap-2 text-sm ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
                   <svg className={`w-5 h-5 mt-0.5 flex-shrink-0 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
