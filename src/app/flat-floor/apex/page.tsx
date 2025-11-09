@@ -505,6 +505,49 @@ export default function ApexModelPage() {
             </div>
           </div>
 
+          {/* Steel Guide Link */}
+          <div className={`w-full backdrop-blur-sm rounded-xl p-6 ${transitionClass} ${
+            theme === 'dark'
+              ? 'bg-gradient-to-r from-orange-500/10 to-red-500/10 border-2 border-orange-500/30'
+              : 'bg-gradient-to-r from-orange-50 to-red-50 border-2 border-orange-200'
+          }`}>
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+              <div className="flex items-start gap-4">
+                <div className={`w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 ${
+                  theme === 'dark' ? 'bg-orange-500/20' : 'bg-orange-100'
+                }`}>
+                  <svg className={`w-6 h-6 ${
+                    theme === 'dark' ? 'text-orange-400' : 'text-orange-600'
+                  }`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className={`text-lg font-bold mb-2 ${
+                    theme === 'dark' ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Understanding Hardox Steel Options
+                  </h4>
+                  <p className={`text-sm ${
+                    theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
+                  }`}>
+                    Learn about the different Hardox steel grades and their applications to make the best choice for your needs
+                  </p>
+                </div>
+              </div>
+              <Link
+                href="/resources/steel-guide"
+                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 whitespace-nowrap ${
+                  theme === 'dark'
+                    ? 'bg-orange-500 hover:bg-orange-600 text-white shadow-lg shadow-orange-500/20'
+                    : 'bg-orange-600 hover:bg-orange-700 text-white shadow-lg'
+                }`}
+              >
+                View Steel Guide →
+              </Link>
+            </div>
+          </div>
+
           {/* 3D Model Preview */}
           <div className="w-full space-y-6 max-w-screen-xl mx-auto">
             <h3 className={`text-2xl md:text-3xl font-bold text-center ${transitionClass} ${
