@@ -89,7 +89,7 @@ export default function SteelSelectionGuidePage() {
         <div className="max-w-7xl mx-auto space-y-12">
 
           {/* Quick Answer Section */}
-          <div id="quick-answer" className={`backdrop-blur-sm rounded-2xl p-8 ${transitionClass} ${
+          <div id="quick-answer" className={`scroll-mt-32 md:scroll-mt-36 backdrop-blur-sm rounded-2xl p-8 ${transitionClass} ${
             theme === 'dark'
               ? 'bg-white/5 border-2 border-gray-700'
               : 'bg-white/80 border-2 border-gray-200'
@@ -176,7 +176,7 @@ export default function SteelSelectionGuidePage() {
           </div>
 
           {/* Steel Selection by Material Section */}
-          <div id="by-material" className={`backdrop-blur-sm rounded-2xl p-8 ${transitionClass} ${
+          <div id="by-material" className={`scroll-mt-32 md:scroll-mt-36 backdrop-blur-sm rounded-2xl p-8 ${transitionClass} ${
             theme === 'dark'
               ? 'bg-white/5 border-2 border-gray-700'
               : 'bg-white/80 border-2 border-gray-200'
@@ -367,7 +367,7 @@ export default function SteelSelectionGuidePage() {
           </div>
 
           {/* Cost Analysis Section */}
-          <div id="cost-analysis" className={`backdrop-blur-sm rounded-2xl p-8 ${transitionClass} ${
+          <div id="cost-analysis" className={`scroll-mt-32 md:scroll-mt-36 backdrop-blur-sm rounded-2xl p-8 ${transitionClass} ${
             theme === 'dark'
               ? 'bg-gradient-to-br from-green-500/10 to-blue-500/10 border-2 border-green-500/30'
               : 'bg-gradient-to-br from-green-50 to-blue-50 border-2 border-green-200'
