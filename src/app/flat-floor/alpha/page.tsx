@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useTheme } from '../../../components/theme-provider'
-import { ThemeToggle } from '../../../components/theme-toggle'
 import { EmailCaptureModal } from '../../../components/email-capture-modal'
 import { Truck3DViewer } from '../../../components/truck-3d-viewer'
 import { useReducedMotion } from '../../../hooks/use-reduced-motion'
@@ -112,7 +111,7 @@ export default function AlphaModelPage() {
                   <h4 className={`font-semibold text-lg mb-2 ${
                     theme === 'dark' ? 'text-white' : 'text-gray-900'
                   }`}>
-                    98" Fender Width
+                    98&quot; Fender Width
                   </h4>
                   <p className={`text-sm ${transitionClass} ${
                     theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
@@ -541,26 +540,26 @@ export default function AlphaModelPage() {
                 <div>
                   <p className={`text-sm font-semibold mb-3 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Body Lengths</p>
                   <p className={`text-base ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                    <span className="font-bold text-blue-500">12' to 24'</span>
+                    <span className="font-bold text-blue-500">12&apos; to 24&apos;</span>
                   </p>
                 </div>
                 <div>
                   <p className={`text-sm font-semibold mb-3 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Side Heights</p>
                   <div className="flex flex-wrap gap-2">
                     <span className={`px-3 py-1 rounded-lg text-sm font-semibold ${theme === 'dark' ? 'bg-blue-500/20 text-blue-400 border border-blue-500/50' : 'bg-blue-100 text-blue-700 border border-blue-300'}`}>
-                      42"
+                      42&quot;
                     </span>
                     <span className={`px-3 py-1 rounded-lg text-sm font-semibold ${theme === 'dark' ? 'bg-blue-500/20 text-blue-400 border border-blue-500/50' : 'bg-blue-100 text-blue-700 border border-blue-300'}`}>
-                      48"
+                      48&quot;
                     </span>
                     <span className={`px-3 py-1 rounded-lg text-sm font-semibold ${theme === 'dark' ? 'bg-blue-500/20 text-blue-400 border border-blue-500/50' : 'bg-blue-100 text-blue-700 border border-blue-300'}`}>
-                      54"
+                      54&quot;
                     </span>
                     <span className={`px-3 py-1 rounded-lg text-sm font-semibold ${theme === 'dark' ? 'bg-blue-500/20 text-blue-400 border border-blue-500/50' : 'bg-blue-100 text-blue-700 border border-blue-300'}`}>
-                      60"
+                      60&quot;
                     </span>
                     <span className={`px-3 py-1 rounded-lg text-sm font-semibold ${theme === 'dark' ? 'bg-purple-500/20 text-purple-400 border border-purple-500/50' : 'bg-purple-100 text-purple-700 border border-purple-300'}`}>
-                      Sloped 66"-54"
+                      Sloped 66&quot;-54&quot;
                     </span>
                   </div>
                 </div>

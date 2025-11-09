@@ -51,7 +51,7 @@ export default function TermsPage() {
                 2. Use License
               </h2>
               <p className="mb-4">
-                Permission is granted to temporarily access the materials on ROX4D Truck Bodies'
+                Permission is granted to temporarily access the materials on ROX4D Truck Bodies&apos;
                 website for personal, non-commercial transitory viewing only. This is the grant of
                 a license, not a transfer of title.
               </p>
@@ -97,7 +97,7 @@ export default function TermsPage() {
                 5. Accuracy of Materials
               </h2>
               <p className="mb-4">
-                The materials appearing on ROX4D Truck Bodies' website could include technical,
+                The materials appearing on ROX4D Truck Bodies&apos; website could include technical,
                 typographical, or photographic errors. ROX4D does not warrant that any of the
                 materials on its website are accurate, complete, or current.
               </p>

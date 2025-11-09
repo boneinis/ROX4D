@@ -53,7 +53,7 @@ export default function WarrantyPage() {
               <h2 className={`text-2xl font-bold mb-4 ${
                 theme === 'dark' ? 'text-white' : 'text-gray-900'
               }`}>
-                What's Covered
+                What&apos;s Covered
               </h2>
               <ul className="list-disc list-inside space-y-2 mb-4">
                 <li>Structural integrity defects</li>
@@ -67,7 +67,7 @@ export default function WarrantyPage() {
               <h2 className={`text-2xl font-bold mb-4 ${
                 theme === 'dark' ? 'text-white' : 'text-gray-900'
               }`}>
-                What's Not Covered
+                What&apos;s Not Covered
               </h2>
               <ul className="list-disc list-inside space-y-2 mb-4">
                 <li>Normal wear and tear</li>

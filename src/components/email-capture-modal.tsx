@@ -155,7 +155,7 @@ export function EmailCaptureModal({ isOpen, onClose, type }: EmailCaptureModalPr
             <p className={`transition-colors ${
               theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
             }`}>
-              We'll be in touch soon.
+              We&apos;ll be in touch soon.
             </p>
           </div>
         )}

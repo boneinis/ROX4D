@@ -323,7 +323,7 @@ export default function Home() {
                   </p>
                   <div className={`pt-2 space-y-1`}>
                     <p className={`text-xs text-center ${theme === 'dark' ? 'text-gray-500' : 'text-gray-600'} italic`}>
-                      *Based on 21' body with air high lift
+                      *Based on 21&apos; body with air high lift
                     </p>
                     <p className={`text-xs text-center ${theme === 'dark' ? 'text-gray-500' : 'text-gray-600'} italic`}>
                       *Weight savings may vary based on options

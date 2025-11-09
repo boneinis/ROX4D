@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useTheme } from '../../components/theme-provider'
-import { ThemeToggle } from '../../components/theme-toggle'
 import { EmailCaptureModal } from '../../components/email-capture-modal'
 import { Truck3DViewer } from '../../components/truck-3d-viewer'
 import { useReducedMotion } from '../../hooks/use-reduced-motion'

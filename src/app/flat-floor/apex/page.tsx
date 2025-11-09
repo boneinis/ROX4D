@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useTheme } from '../../../components/theme-provider'
-import { ThemeToggle } from '../../../components/theme-toggle'
 import { EmailCaptureModal } from '../../../components/email-capture-modal'
 import { Truck3DViewer } from '../../../components/truck-3d-viewer'
 import { useReducedMotion } from '../../../hooks/use-reduced-motion'
@@ -137,7 +136,7 @@ export default function ApexModelPage() {
                   <h4 className={`font-semibold text-lg mb-2 ${
                     theme === 'dark' ? 'text-white' : 'text-gray-900'
                   }`}>
-                    98" Fender Width
+                    98&quot; Fender Width
                   </h4>
                   <p className={`text-sm ${transitionClass} ${
                     theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
@@ -491,14 +490,14 @@ export default function ApexModelPage() {
                 <div>
                   <p className={`text-sm font-semibold mb-3 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Body Lengths</p>
                   <p className={`text-base ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                    <span className="font-bold text-orange-500">12' to 24'</span>
+                    <span className="font-bold text-orange-500">12&apos; to 24&apos;</span>
                   </p>
                 </div>
                 <div>
                   <p className={`text-sm font-semibold mb-3 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Side Height</p>
                   <div className="flex flex-wrap gap-2">
                     <span className={`px-3 py-1 rounded-lg text-sm font-semibold ${theme === 'dark' ? 'bg-orange-500/20 text-orange-400 border border-orange-500/50' : 'bg-orange-100 text-orange-700 border border-orange-300'}`}>
-                      50" (Standard)
+                      50&quot; (Standard)
                     </span>
                   </div>
                 </div>
