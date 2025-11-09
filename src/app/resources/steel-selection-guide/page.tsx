@@ -64,7 +64,7 @@ export default function SteelSelectionGuidePage() {
         theme === 'dark' ? 'bg-gray-900/95 border-b border-gray-700' : 'bg-white/95 border-b border-gray-200'
       }`}>
         <div className="w-full px-4 sm:px-6 lg:px-8 py-4">
-          <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
             <a href="#quick-answer" className={`p-4 rounded-lg text-center font-semibold ${transitionClass} ${
               theme === 'dark'
                 ? 'bg-blue-500/20 hover:bg-blue-500/30 text-blue-400'
@@ -75,11 +75,6 @@ export default function SteelSelectionGuidePage() {
                 ? 'bg-green-500/20 hover:bg-green-500/30 text-green-400'
                 : 'bg-green-100 hover:bg-green-200 text-green-700'
             }`}>By Material</a>
-            <a href="#steel-grades" className={`p-4 rounded-lg text-center font-semibold ${transitionClass} ${
-              theme === 'dark'
-                ? 'bg-purple-500/20 hover:bg-purple-500/30 text-purple-400'
-                : 'bg-purple-100 hover:bg-purple-200 text-purple-700'
-            }`}>Steel Grades</a>
             <a href="#cost-analysis" className={`p-4 rounded-lg text-center font-semibold ${transitionClass} ${
               theme === 'dark'
                 ? 'bg-orange-500/20 hover:bg-orange-500/30 text-orange-400'
