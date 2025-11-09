@@ -1,0 +1,74 @@
+/* Hide eDrawings UI elements */
+.edrawings-tool-bar,
+.edrawings-button-links,
+.edrawings-sheets-control,
+.edrawings-tree-button,
+.edrawings-tool-button,
+.edrawings-menu,
+.edrawings-toolbar,
+.edrawings-top-bar,
+.edrawings-drop-title,
+.edrawings-list-title,
+#edrawings-top-bar,
+#edrawings-top-bar-content,
+[class*="edrawings-button"],
+[class*="edrawings-menu"],
+[class*="edrawings-toolbar"],
+[class*="edrawings-control"],
+[class*="edrawings-top"],
+[class*="edrawings-header"],
+[class*="edrawings-title"] {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Make canvas full size and apply greyscale filter */
+#edrawings-canvas,
+.edrawings-canvas-border,
+.edrawings-viewer-regular {
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    filter: grayscale(100%) contrast(1.1) brightness(0.9) !important;
+    -webkit-filter: grayscale(100%) contrast(1.1) brightness(0.9) !important;
+}
+
+/* Apply greyscale to the entire iframe content */
+body, html {
+    filter: grayscale(100%) contrast(1.1) brightness(0.9) !important;
+    -webkit-filter: grayscale(100%) contrast(1.1) brightness(0.9) !important;
+}
+
+/* Remove any UI overlays and specific eDrawings containers */
+body > div:not([id*="canvas"]):not([class*="canvas"]):not([class*="viewer"]):not([id*="edrawings-canvas"]) {
+    display: none !important;
+}
+
+/* Hide specific eDrawings UI containers */
+div[id*="top-bar"],
+div[class*="top-bar"],
+div[id*="toolbar"],
+div[class*="toolbar"],
+div[id*="menu"],
+div[class*="menu"] {
+    display: none !important;
+    height: 0 !important;
+}
+
+/* Ensure clean background */
+body {
+    background: transparent !important;
+    overflow: hidden !important;
+}
+
+/* Hide loading screens and dialogs */
+[class*="dialog"],
+[class*="loading"],
+[class*="splash"],
+[class*="intro"] {
+    display: none !important;
+}
