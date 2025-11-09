@@ -64,7 +64,7 @@ export default function SteelSelectionGuidePage() {
         theme === 'dark' ? 'bg-gray-900/95 border-b border-gray-700' : 'bg-white/95 border-b border-gray-200'
       }`}>
         <div className="w-full px-4 sm:px-6 lg:px-8 py-4">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
             <a href="#quick-answer" className={`p-4 rounded-lg text-center font-semibold ${transitionClass} ${
               theme === 'dark'
                 ? 'bg-blue-500/20 hover:bg-blue-500/30 text-blue-400'
@@ -75,6 +75,11 @@ export default function SteelSelectionGuidePage() {
                 ? 'bg-green-500/20 hover:bg-green-500/30 text-green-400'
                 : 'bg-green-100 hover:bg-green-200 text-green-700'
             }`}>By Material</a>
+            <a href="#steel-options" className={`p-4 rounded-lg text-center font-semibold ${transitionClass} ${
+              theme === 'dark'
+                ? 'bg-purple-500/20 hover:bg-purple-500/30 text-purple-400'
+                : 'bg-purple-100 hover:bg-purple-200 text-purple-700'
+            }`}>Steel Options</a>
             <a href="#cost-analysis" className={`p-4 rounded-lg text-center font-semibold ${transitionClass} ${
               theme === 'dark'
                 ? 'bg-orange-500/20 hover:bg-orange-500/30 text-orange-400'
@@ -280,6 +285,646 @@ export default function SteelSelectionGuidePage() {
               Hardox® is a registered trademark of SSAB. Actual steel requirements may vary based on loading height,
               operator technique, climate conditions, and specific material characteristics. Consult with steel experts
               for critical applications.
+            </div>
+          </div>
+
+          {/* Steel Options Compared Section */}
+          <div id="steel-options" className={`scroll-mt-44 md:scroll-mt-48 backdrop-blur-sm rounded-2xl p-8 ${transitionClass} ${
+            theme === 'dark'
+              ? 'bg-white/5 border-2 border-gray-700'
+              : 'bg-white/80 border-2 border-gray-200'
+          }`}>
+            <h2 className={`text-3xl font-bold mb-6 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+              Dump Truck Steel Options Compared
+            </h2>
+            <p className={`mb-8 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+              Comprehensive comparison of steel grades for dump truck bodies
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Hardox 500 Tuf */}
+              <div className={`rounded-xl p-6 ${
+                theme === 'dark' ? 'bg-green-500/10 border-2 border-green-500/30' : 'bg-green-50 border-2 border-green-200'
+              }`}>
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                      Hardox 500 Tuf
+                    </h3>
+                    <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>SSAB</div>
+                  </div>
+                  <div className={`px-3 py-1 rounded-full text-sm font-bold ${
+                    theme === 'dark' ? 'bg-green-500/20 text-green-400' : 'bg-green-200 text-green-700'
+                  }`}>5/5</div>
+                </div>
+                <div className={`inline-block px-3 py-1 rounded-lg text-xs font-semibold mb-4 ${
+                  theme === 'dark' ? 'bg-blue-500/20 text-blue-400' : 'bg-blue-100 text-blue-700'
+                }`}>
+                  Best for Rock Bodies
+                </div>
+                <div className={`space-y-2 text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <div><strong>Hardness:</strong> 475-505 HBW</div>
+                  <div><strong>Impact Test:</strong> 27J @ -20°C (45J @ -40°C)</div>
+                  <div><strong>Cold Weather:</strong> Superior</div>
+                  <div><strong>Service Life:</strong> 85% longer</div>
+                </div>
+                <div className={`text-sm mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <strong>Dump Truck Uses:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Rock/quarry bodies</li>
+                    <li>Mining dump bodies</li>
+                    <li>Demo/scrap hauling</li>
+                  </ul>
+                </div>
+                <div className={`text-sm mb-2 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
+                  <strong>Pros:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Handles Class III rip rap</li>
+                    <li>Excellent cold weather</li>
+                    <li>18% weight savings possible</li>
+                  </ul>
+                </div>
+                <div className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'}`}>
+                  <strong>Cons:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Higher initial cost</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Hardox 450 */}
+              <div className={`rounded-xl p-6 ${
+                theme === 'dark' ? 'bg-blue-500/10 border-2 border-blue-500/30' : 'bg-blue-50 border-2 border-blue-200'
+              }`}>
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                      Hardox 450
+                    </h3>
+                    <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>SSAB</div>
+                  </div>
+                  <div className={`px-3 py-1 rounded-full text-sm font-bold ${
+                    theme === 'dark' ? 'bg-blue-500/20 text-blue-400' : 'bg-blue-200 text-blue-700'
+                  }`}>4.5/5</div>
+                </div>
+                <div className={`inline-block px-3 py-1 rounded-lg text-xs font-semibold mb-4 ${
+                  theme === 'dark' ? 'bg-blue-500/20 text-blue-400' : 'bg-blue-100 text-blue-700'
+                }`}>
+                  Good Option
+                </div>
+                <div className={`space-y-2 text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <div><strong>Hardness:</strong> 425-475 HBW</div>
+                  <div><strong>Impact Test:</strong> 27J @ -20°C</div>
+                  <div><strong>Cold Weather:</strong> Excellent</div>
+                  <div><strong>Service Life:</strong> 50% longer</div>
+                </div>
+                <div className={`text-sm mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <strong>Dump Truck Uses:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>General purpose bodies</li>
+                    <li>Asphalt hauling</li>
+                    <li>Aggregate hauling</li>
+                  </ul>
+                </div>
+                <div className={`text-sm mb-2 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
+                  <strong>Pros:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Good impact/wear balance</li>
+                    <li>Easier to form</li>
+                    <li>Proven in dump trucks</li>
+                  </ul>
+                </div>
+                <div className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'}`}>
+                  <strong>Cons:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Not for heaviest impacts</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Stainless 304 */}
+              <div className={`rounded-xl p-6 ${
+                theme === 'dark' ? 'bg-purple-500/10 border-2 border-purple-500/30' : 'bg-purple-50 border-2 border-purple-200'
+              }`}>
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                      Stainless 304
+                    </h3>
+                    <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Various</div>
+                  </div>
+                  <div className={`px-3 py-1 rounded-full text-sm font-bold ${
+                    theme === 'dark' ? 'bg-purple-500/20 text-purple-400' : 'bg-purple-200 text-purple-700'
+                  }`}>4.5/5</div>
+                </div>
+                <div className={`inline-block px-3 py-1 rounded-lg text-xs font-semibold mb-4 ${
+                  theme === 'dark' ? 'bg-purple-500/20 text-purple-400' : 'bg-purple-100 text-purple-700'
+                }`}>
+                  Corrosion King
+                </div>
+                <div className={`space-y-2 text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <div><strong>Hardness:</strong> 170-220 HBW</div>
+                  <div><strong>Impact Test:</strong> Excellent toughness</div>
+                  <div><strong>Cold Weather:</strong> Excellent</div>
+                  <div><strong>Service Life:</strong> 3-4x longer</div>
+                </div>
+                <div className={`text-sm mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <strong>Dump Truck Uses:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Salt/sand bodies</li>
+                    <li>Fertilizer hauling</li>
+                    <li>Municipal trucks</li>
+                  </ul>
+                </div>
+                <div className={`text-sm mb-2 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
+                  <strong>Pros:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>No painting needed</li>
+                    <li>Resists salt/chemicals</li>
+                    <li>Lighter than AR steel</li>
+                  </ul>
+                </div>
+                <div className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'}`}>
+                  <strong>Cons:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>High initial cost</li>
+                    <li>Lower hardness</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Creusabro 8000 */}
+              <div className={`rounded-xl p-6 ${
+                theme === 'dark' ? 'bg-white/5 border-2 border-gray-700' : 'bg-white border-2 border-gray-200'
+              }`}>
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                      Creusabro 8000
+                    </h3>
+                    <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Industeel</div>
+                  </div>
+                  <div className={`px-3 py-1 rounded-full text-sm font-bold ${
+                    theme === 'dark' ? 'bg-gray-600 text-gray-300' : 'bg-gray-200 text-gray-700'
+                  }`}>4.5/5</div>
+                </div>
+                <div className={`space-y-2 text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <div><strong>Hardness:</strong> 370-430 HB</div>
+                  <div><strong>Impact Test:</strong> Min 27J @ -20°C</div>
+                  <div><strong>Cold Weather:</strong> Good</div>
+                  <div><strong>Service Life:</strong> 80% longer</div>
+                </div>
+                <div className={`text-sm mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <strong>Dump Truck Uses:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Mining dump bodies</li>
+                    <li>Hot material hauling</li>
+                    <li>Variable load types</li>
+                  </ul>
+                </div>
+                <div className={`text-sm mb-2 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
+                  <strong>Pros:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Work hardens to 500+ HB</li>
+                    <li>Heat resistant to 450°C</li>
+                    <li>TRIP effect steel</li>
+                  </ul>
+                </div>
+                <div className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'}`}>
+                  <strong>Cons:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Limited availability</li>
+                    <li>Higher cost</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Quard 450 */}
+              <div className={`rounded-xl p-6 ${
+                theme === 'dark' ? 'bg-white/5 border-2 border-gray-700' : 'bg-white border-2 border-gray-200'
+              }`}>
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                      Quard 450
+                    </h3>
+                    <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>NLMK</div>
+                  </div>
+                  <div className={`px-3 py-1 rounded-full text-sm font-bold ${
+                    theme === 'dark' ? 'bg-gray-600 text-gray-300' : 'bg-gray-200 text-gray-700'
+                  }`}>4/5</div>
+                </div>
+                <div className={`space-y-2 text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <div><strong>Hardness:</strong> 430-480 HB</div>
+                  <div><strong>Impact Test:</strong> Available on request</div>
+                  <div><strong>Cold Weather:</strong> Very Good</div>
+                  <div><strong>Service Life:</strong> 50% longer</div>
+                </div>
+                <div className={`text-sm mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <strong>Dump Truck Uses:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Quarry trucks</li>
+                    <li>Mining bodies</li>
+                    <li>Heavy construction</li>
+                  </ul>
+                </div>
+                <div className={`text-sm mb-2 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
+                  <strong>Pros:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Good wear resistance</li>
+                    <li>Competitive pricing</li>
+                    <li>European quality</li>
+                  </ul>
+                </div>
+                <div className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'}`}>
+                  <strong>Cons:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Impact data not published</li>
+                    <li>Limited US distribution</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Raex 400 */}
+              <div className={`rounded-xl p-6 ${
+                theme === 'dark' ? 'bg-white/5 border-2 border-gray-700' : 'bg-white border-2 border-gray-200'
+              }`}>
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                      Raex 400
+                    </h3>
+                    <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>SSAB</div>
+                  </div>
+                  <div className={`px-3 py-1 rounded-full text-sm font-bold ${
+                    theme === 'dark' ? 'bg-gray-600 text-gray-300' : 'bg-gray-200 text-gray-700'
+                  }`}>3.5/5</div>
+                </div>
+                <div className={`space-y-2 text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <div><strong>Hardness:</strong> 370-430 HBW</div>
+                  <div><strong>Impact Test:</strong> Available on request</div>
+                  <div><strong>Cold Weather:</strong> Good</div>
+                  <div><strong>Service Life:</strong> 40% longer</div>
+                </div>
+                <div className={`text-sm mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <strong>Dump Truck Uses:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Light-duty dump bodies</li>
+                    <li>Municipal trucks</li>
+                    <li>Farm applications</li>
+                  </ul>
+                </div>
+                <div className={`text-sm mb-2 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
+                  <strong>Pros:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Good formability</li>
+                    <li>SSAB quality</li>
+                    <li>Lower cost than Hardox</li>
+                  </ul>
+                </div>
+                <div className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'}`}>
+                  <strong>Cons:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Impact data not published</li>
+                    <li>Lower hardness</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Hardox 400 */}
+              <div className={`rounded-xl p-6 ${
+                theme === 'dark' ? 'bg-white/5 border-2 border-gray-700' : 'bg-white border-2 border-gray-200'
+              }`}>
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                      Hardox 400
+                    </h3>
+                    <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>SSAB</div>
+                  </div>
+                  <div className={`px-3 py-1 rounded-full text-sm font-bold ${
+                    theme === 'dark' ? 'bg-gray-600 text-gray-300' : 'bg-gray-200 text-gray-700'
+                  }`}>4/5</div>
+                </div>
+                <div className={`space-y-2 text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <div><strong>Hardness:</strong> 370-430 HBW</div>
+                  <div><strong>Impact Test:</strong> 25J @ -40°C typical</div>
+                  <div><strong>Cold Weather:</strong> Good</div>
+                  <div><strong>Service Life:</strong> 30% longer</div>
+                </div>
+                <div className={`text-sm mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <strong>Dump Truck Uses:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Contractor bodies</li>
+                    <li>Landscape trucks</li>
+                    <li>Light materials</li>
+                  </ul>
+                </div>
+                <div className={`text-sm mb-2 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
+                  <strong>Pros:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Good formability</li>
+                    <li>Lower cost than 450</li>
+                    <li>Wide availability</li>
+                  </ul>
+                </div>
+                <div className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'}`}>
+                  <strong>Cons:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Less wear resistance</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* AR400 */}
+              <div className={`rounded-xl p-6 ${
+                theme === 'dark' ? 'bg-yellow-500/10 border-2 border-yellow-500/30' : 'bg-yellow-50 border-2 border-yellow-200'
+              }`}>
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                      AR400
+                    </h3>
+                    <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Generic</div>
+                  </div>
+                  <div className={`px-3 py-1 rounded-full text-sm font-bold ${
+                    theme === 'dark' ? 'bg-yellow-500/20 text-yellow-400' : 'bg-yellow-200 text-yellow-700'
+                  }`}>3/5</div>
+                </div>
+                <div className={`space-y-2 text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <div><strong>Hardness:</strong> 360-440 BHN</div>
+                  <div><strong>Impact Test:</strong> No published data</div>
+                  <div><strong>Cold Weather:</strong> Good above 0°C</div>
+                  <div><strong>Service Life:</strong> Baseline</div>
+                </div>
+                <div className={`text-sm mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <strong>Dump Truck Uses:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Farm trucks</li>
+                    <li>Soil hauling</li>
+                    <li>Warm climate only</li>
+                  </ul>
+                </div>
+                <div className={`text-sm mb-2 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
+                  <strong>Pros:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Lowest cost</li>
+                    <li>Wide availability</li>
+                    <li>OK for dirt/sand</li>
+                  </ul>
+                </div>
+                <div className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'}`}>
+                  <strong>Cons:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>No impact guarantees</li>
+                    <li>Quality varies</li>
+                    <li>Fails in cold weather</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* AR450 */}
+              <div className={`rounded-xl p-6 ${
+                theme === 'dark' ? 'bg-orange-500/10 border-2 border-orange-500/30' : 'bg-orange-50 border-2 border-orange-200'
+              }`}>
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                      AR450
+                    </h3>
+                    <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Generic</div>
+                  </div>
+                  <div className={`px-3 py-1 rounded-full text-sm font-bold ${
+                    theme === 'dark' ? 'bg-orange-500/20 text-orange-400' : 'bg-orange-200 text-orange-700'
+                  }`}>2.5/5</div>
+                </div>
+                <div className={`space-y-2 text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <div><strong>Hardness:</strong> 430-480 BHN</div>
+                  <div><strong>Impact Test:</strong> No published data</div>
+                  <div><strong>Cold Weather:</strong> Fair (brittle)</div>
+                  <div><strong>Service Life:</strong> 30% longer</div>
+                </div>
+                <div className={`text-sm mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <strong>Dump Truck Uses:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Side liner plates</li>
+                    <li>Tailgate liners</li>
+                    <li>No structural use</li>
+                  </ul>
+                </div>
+                <div className={`text-sm mb-2 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
+                  <strong>Pros:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Moderate cost</li>
+                    <li>OK for sliding wear</li>
+                  </ul>
+                </div>
+                <div className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'}`}>
+                  <strong>Cons:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Too brittle for impact</li>
+                    <li>Cracks in cold</li>
+                    <li>Not for dump floors</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* T-1/A514 */}
+              <div className={`rounded-xl p-6 ${
+                theme === 'dark' ? 'bg-white/5 border-2 border-gray-700' : 'bg-white border-2 border-gray-200'
+              }`}>
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                      T-1/A514
+                    </h3>
+                    <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Various</div>
+                  </div>
+                  <div className={`px-3 py-1 rounded-full text-sm font-bold ${
+                    theme === 'dark' ? 'bg-gray-600 text-gray-300' : 'bg-gray-200 text-gray-700'
+                  }`}>4/5</div>
+                </div>
+                <div className={`space-y-2 text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <div><strong>Hardness:</strong> 235-290 HBW</div>
+                  <div><strong>Impact Test:</strong> Min 20J @ -50°C</div>
+                  <div><strong>Cold Weather:</strong> Excellent</div>
+                  <div><strong>Service Life:</strong> Structural only</div>
+                </div>
+                <div className={`text-sm mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <strong>Dump Truck Uses:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Body framework</li>
+                    <li>Hoist towers</li>
+                    <li>Structural components</li>
+                  </ul>
+                </div>
+                <div className={`text-sm mb-2 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
+                  <strong>Pros:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>High strength</li>
+                    <li>Excellent toughness</li>
+                    <li>Weldable</li>
+                  </ul>
+                </div>
+                <div className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'}`}>
+                  <strong>Cons:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Not wear resistant</li>
+                    <li>Not for dump floors</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* AR500 - Warning */}
+              <div className={`rounded-xl p-6 ${
+                theme === 'dark' ? 'bg-red-500/10 border-2 border-red-500/30' : 'bg-red-50 border-2 border-red-300'
+              }`}>
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                      AR500
+                    </h3>
+                    <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>Generic</div>
+                  </div>
+                  <div className={`px-3 py-1 rounded-full text-sm font-bold ${
+                    theme === 'dark' ? 'bg-red-500/20 text-red-400' : 'bg-red-200 text-red-700'
+                  }`}>1/5</div>
+                </div>
+                <div className={`inline-block px-3 py-1 rounded-lg text-xs font-semibold mb-4 ${
+                  theme === 'dark' ? 'bg-red-500/20 text-red-400' : 'bg-red-100 text-red-700'
+                }`}>
+                  DO NOT USE
+                </div>
+                <div className={`space-y-2 text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <div><strong>Hardness:</strong> 460-544 BHN</div>
+                  <div><strong>Impact Test:</strong> No published data</div>
+                  <div><strong>Cold Weather:</strong> Poor (very brittle)</div>
+                  <div><strong>Service Life:</strong> 60% longer wear</div>
+                </div>
+                <div className={`text-sm mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <strong>Dump Truck Uses:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>DO NOT USE</li>
+                    <li>Too brittle</li>
+                    <li>Safety hazard</li>
+                  </ul>
+                </div>
+                <div className={`text-sm mb-2 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
+                  <strong>Pros:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>High hardness only</li>
+                  </ul>
+                </div>
+                <div className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'}`}>
+                  <strong>Cons:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Catastrophic failure risk</li>
+                    <li>Shatters on impact</li>
+                    <li>Warranty void risk</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Hardox 600 */}
+              <div className={`rounded-xl p-6 ${
+                theme === 'dark' ? 'bg-white/5 border-2 border-gray-700' : 'bg-white border-2 border-gray-200'
+              }`}>
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                      Hardox 600
+                    </h3>
+                    <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>SSAB</div>
+                  </div>
+                  <div className={`px-3 py-1 rounded-full text-sm font-bold ${
+                    theme === 'dark' ? 'bg-gray-600 text-gray-300' : 'bg-gray-200 text-gray-700'
+                  }`}>3/5</div>
+                </div>
+                <div className={`space-y-2 text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <div><strong>Hardness:</strong> 570-640 HBW</div>
+                  <div><strong>Impact Test:</strong> Limited toughness</div>
+                  <div><strong>Cold Weather:</strong> Fair</div>
+                  <div><strong>Service Life:</strong> 2x for pure wear</div>
+                </div>
+                <div className={`text-sm mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <strong>Dump Truck Uses:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Tailgate liners</li>
+                    <li>High-wear zones</li>
+                    <li>Non-impact areas only</li>
+                  </ul>
+                </div>
+                <div className={`text-sm mb-2 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
+                  <strong>Pros:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Extreme hardness</li>
+                    <li>Maximum wear life</li>
+                    <li>SSAB quality</li>
+                  </ul>
+                </div>
+                <div className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'}`}>
+                  <strong>Cons:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Not for structural use</li>
+                    <li>Limited formability</li>
+                    <li>High cost</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Domex 700 */}
+              <div className={`rounded-xl p-6 ${
+                theme === 'dark' ? 'bg-white/5 border-2 border-gray-700' : 'bg-white border-2 border-gray-200'
+              }`}>
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className={`text-xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+                      Domex 700
+                    </h3>
+                    <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>SSAB</div>
+                  </div>
+                  <div className={`px-3 py-1 rounded-full text-sm font-bold ${
+                    theme === 'dark' ? 'bg-gray-600 text-gray-300' : 'bg-gray-200 text-gray-700'
+                  }`}>4/5</div>
+                </div>
+                <div className={`space-y-2 text-sm mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <div><strong>Hardness:</strong> ≥700 MPa yield</div>
+                  <div><strong>Impact Test:</strong> Min 27J @ -40°C</div>
+                  <div><strong>Cold Weather:</strong> Excellent</div>
+                  <div><strong>Service Life:</strong> Structural steel</div>
+                </div>
+                <div className={`text-sm mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
+                  <strong>Dump Truck Uses:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Body frames</li>
+                    <li>Chassis reinforcement</li>
+                    <li>Weight-critical structures</li>
+                  </ul>
+                </div>
+                <div className={`text-sm mb-2 ${theme === 'dark' ? 'text-green-400' : 'text-green-600'}`}>
+                  <strong>Pros:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>High strength-to-weight</li>
+                    <li>Excellent toughness</li>
+                    <li>Weight savings</li>
+                  </ul>
+                </div>
+                <div className={`text-sm ${theme === 'dark' ? 'text-red-400' : 'text-red-600'}`}>
+                  <strong>Cons:</strong>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li>Not wear resistant</li>
+                    <li>Structural use only</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className={`mt-6 p-4 rounded-lg text-xs ${
+              theme === 'dark' ? 'bg-gray-800/50 border border-gray-700' : 'bg-gray-100 border border-gray-300'
+            } ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
+              <strong>Note:</strong> Steel grade specifications based on manufacturer published data and independent testing.
+              Hardox® is a registered trademark of SSAB. Charpy impact values per ISO 148 and ASTM E23 standards.
+              Service life estimates based on field observations in rock quarry applications. Performance may vary with operating conditions.
             </div>
           </div>
 
