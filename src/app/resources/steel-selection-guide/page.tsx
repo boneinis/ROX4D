@@ -60,7 +60,7 @@ export default function SteelSelectionGuidePage() {
       </div>
 
       {/* Quick Navigation - Sticky */}
-      <div className={`sticky top-0 z-40 w-full backdrop-blur-md ${transitionClass} ${
+      <div className={`sticky top-16 md:top-20 z-40 w-full backdrop-blur-md ${transitionClass} ${
         theme === 'dark' ? 'bg-gray-900/95 border-b border-gray-700' : 'bg-white/95 border-b border-gray-200'
       }`}>
         <div className="w-full px-4 sm:px-6 lg:px-8 py-4">
