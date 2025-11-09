@@ -216,7 +216,6 @@ export default function SteelGuidePage() {
                     </td>
                     <td className={`p-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
                       <div className="text-sm">3/16&quot; Floor + 5/32&quot; Walls</div>
-                      <div className="text-xs text-gray-500 mt-1">Improved dent resistance</div>
                     </td>
                     <td className={`p-4 ${theme === 'dark' ? 'text-green-300' : 'text-green-700'}`}>
                       <div className="text-sm font-semibold">5/32&quot; Floor + 1/8&quot; Walls</div>
